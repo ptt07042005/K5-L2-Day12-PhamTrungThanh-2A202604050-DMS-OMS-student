@@ -1,0 +1,9 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Ghế rear_left trên S01_rgb rất tối không xác định được bên trong ghế trẻ em, trong khi S01_ir sáng rõ cho thấy ghế trống",child_seat.occupied,"Trên S01_rgb phải giữ unknown (không đoán từ IR), trên S01_ir gán no"
+S03_ir,IR_sim,"Mất toàn bộ thông tin màu sắc của quần áo và đồ vật (túi tím ở ghế giữa chuyển sang thang xám đơn sắc)",object.type / person,"Phải nhận dạng đồ vật dựa vào hình dạng và ngữ cảnh vị trí ghế thay vì màu sắc"
+S05_ir,IR_sim,"Vùng thân hai trẻ em trên S05_rgb quá tối không thấy rõ dây an toàn, còn S05_ir hiện rõ phần ngực không có dây",person.seatbelt,"Trên S05_rgb giữ unknown, trên S05_ir gán not_worn"
+S06_ir,IR_sim,"Balo đỏ ở ghế giữa và nôi em bé ở rear_left chìm trong bóng tối trên S06_rgb nhưng hiện rõ đường nét trên S06_ir",object / infant_seat,"Xác nhận được hướng quay nôi (facing=rear) và loại túi (bag) trên S06_ir; không dùng màu sắc để phân loại"
+D02,real_IR,"Đèn LED hồng ngoại gần tạo đốm phản xạ trắng loá trên cả hai tròng kính che vùng mắt tài xế",face.eye_left / face.eye_right / face13,"Ghi eye_left=unknown, eye_right=unknown (không đoán closed) và bật cờ occluded=1 cho 8 điểm mắt của face13"
+D04,real_IR,"Phản xạ LED rất gắt trên tròng kính trái kết hợp góc nghiêng đầu làm che khuất vùng mắt",face.eye_left / face.eye_right / face13,"Ghi eye_left=unknown, eye_right=unknown và bật occluded=1 cho 8 điểm mắt của face13"
+D05,real_IR,"Tròng kính tối dưới ánh sáng NIR kèm đốm phản xạ LED và gọng kính che vùng mắt",face.glasses / face.eye_left / face.eye_right,"Cẩn thận khi phân biệt clear với sun trên NIR; giữ eye_left/eye_right=unknown và bật occluded=1 cho 8 điểm mắt"
+D06,real_IR,"Bàn tay trái giơ sát nguồn LED hồng ngoại bị bão hoà sáng trắng mất chi tiết các ngón tay",hand,"Xác định box hand dựa theo đường bao bàn tay còn thấy được; vùng mặt không đeo kính thấy rõ hai mắt nhắm (closed)"
