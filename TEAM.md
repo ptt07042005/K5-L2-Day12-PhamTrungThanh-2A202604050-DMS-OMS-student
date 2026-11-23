@@ -4,11 +4,12 @@ Mã bộ ảnh: **G01** · Hình thức: **cá nhân**
 
 | Họ tên | MSSV | Đã gán đủ 22 ảnh? | Review chéo với (peer diff) | Số dòng disagreement đã xử lý |
 |---|---|---|---|---|
-| Phạm Trung Thành | 2A202604050 | có | Lê Tuấn Anh | *(chờ peer diff)* |
+| Phạm Trung Thành | 2A202604050 | có | Lê Tuấn Anh (2A202604064) | 20 / 20 |
 
 Ca hai bạn vẫn không thống nhất và đã hỏi coach (ghi tên ảnh + đối tượng):
 
-- *(chờ cập nhật sau bước review chéo)*
+- `S02_ir`, `S07_ir` — `person.seatbelt` (`not_worn` vs `unknown` khi vùng ngực bị thành nôi che một phần trên ảnh IR-sim).
+- `S03_rgb/ir`, `S05_rgb/ir` — `child_seat.occupied` (`yes` theo schema JSON cập nhật mới vs `unknown` theo bản guideline v1.0 gốc).
 - *(chờ cập nhật sau bước review chéo)*
 
 ## Cá nhân

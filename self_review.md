@@ -21,4 +21,4 @@ Lần sau tránh bằng cách: Luôn phóng to vùng mặt trước khi đặt �
 
 ## 3. Ghi chú về disagreement_log
 
-*(Chờ chạy `cabin_check.py diff` QC chéo với Lê Tuấn Anh để điền mục này.)*
+Qua 20 dòng `diff` với Lê Tuấn Anh (`2A202604064`), ở các dòng `S02_ir` và `S07_ir` (`person.seatbelt`), bạn chọn `unknown` (thận trọng khi vùng ngực nằm sâu trong nôi/tối) còn mình chọn `not_worn` (theo đặc thù SVIRO không có dây an toàn). Mình học được rằng không nên suy mặc định `not_worn` chỉ vì biết đặc trưng dataset; khi vùng ngực bị che khuất thực sự trên khung hình đó thì cân nhắc `unknown` theo luật `4.4-1` sẽ an toàn và khách quan hơn cho model. Ngoài ra, đối chiếu `S02_rgb/ir` (`face`) và `D01`/`D02` (`person`, `face13`) giúp mình kiểm chứng lại việc giữ nguyên `export_final.zip` là hợp lệ, không cần xuất `v2`.
